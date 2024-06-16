@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stasiun Cikampek</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        h1,
+        h2,
+        p,
+        a,
+        th,
+        td {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #2c3e50;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #27ae60;
+        }
+
+        .section {
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: justify;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hero {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Stasiun_Cikampek_2024.jpg');
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: yellow;
+            font-weight: bold;
+            font-style: italic;
+            animation: fadeIn 2s ease-in-out, colorChange 2s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: yellow;
+            }
+
+            100% {
+                color: orange;
+            }
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: orange;
+            font-weight: bold;
+            font-style: italic;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            color: grey;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .btn {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #2ecc71;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: yellow;
+            font-style: italic;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.6;
+            font-style: italic;
+            color: #ffffff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            color: #ffffff;
+        }
+
+        table th,
+        table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #34495e;
+        }
+
+        table td {
+            background-color: #2c3e50;
+        }
+
+        .additional-services {
+            margin-top: 40px;
+        }
+
+        .additional-services table {
+            width: 100%;
+        }
+
+        .additional-services table th,
+        .additional-services table td {
+            padding: 10px;
+            border: 1px solid #fff;
+            text-align: left;
+        }
+
+        .additional-services table th {
+            background-color: #34495e;
+        }
+
+        .additional-services table td {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#layout">Bangunan dan Tata Letak</a></li>
+                <li><a href="#services">Layanan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section hero" id="home">
+            <h1>Welcome to <span style="font-style: italic;">Stasiun Cikampek</span></h1>
+            <h2><span style="font-style: italic;">Cikampek Station</span></h2>
+            <p>Main Gateway of Cikampek Transit: The Best Route to Your Destination!</p>
+            <a href="#about" class="btn">Explore More</a>
+        </section>
+        <body>
+            <!-- Konten lain seperti header, main, dan sections -->
+            
+            <footer>
+                <p style="text-align: center; color: #fff; background-color: rgba(0, 0, 0, 0.7); padding: 10px 0;">
+                    Created by Akhdan Shalahudin &copy; 2024
+                </p>
+            </footer>
+        </body>
+        
+        <section class="section about" id="about" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Stasiun_Cikampek_2024.jpg');">
+            <div class="content">
+                <h2>Sejarah Stasiun Cikampek</h2>
+                <p>
+                    Setelah Staatsspoorwegen (SS) membeli jalur kereta api Batavia–Krawang dari Bataviasche Oosterspoorweg
+                    Maatschappij (BOS) pada 1898, jalur tersebut pun kemudian dikembangkan, salah satunya adalah dengan
+                    melakukan perpanjangan jalur dari Kedunggedeh menuju ke Cikampek. Perpanjangan jalur menuju ke Stasiun
+                    Cikampek ini diresmikan pada 27 Desember 1902. Pada saat itu, SS telah merencanakan akan membangun jalur
+                    kereta api baru pada petak Cikampek–Padalarang sebagai alternatif rute Jakarta–Bandung. Keinginan SS
+                    pada saat itu dikarenakan tingginya permintaan kereta api yang lebih cepat untuk sampai ke tujuan.
+                    jalur lintas Cikampek–Padalarang ini berhasil dibuka pada 2 Mei 1906. Dari Stasiun Cikampek, pembangunan
+                    juga diarahkan menuju ke Cirebon, yang dibuka pada 3 Juni 1912. Bangunan stasiun ini sempat dihancurkan
+                    saat masa Agresi Militer oleh Jepang pada tahun 1942. Bangunan ini akhirnya di renofasi ulang dengan masa
+                    Era DKA pada tahun 1950-an.
+                </p>
+            </div>
+        </section>
+        <body>
+            <!-- Konten lain seperti header, main, dan sections -->
+            
+            <footer>
+                <p style="text-align: center; color: #fff; background-color: rgba(0, 0, 0, 0.7); padding: 10px 0;">
+                    Created by Akhdan Shalahudin &copy; 2024
+                </p>
+            </footer>
+        </body>
+        
+        <section class="section additional-slide" id="additional-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Stasiun_Cikampek_2024.jpg');">
+            <div class="content">
+                <h2>Stasiun Cikampek (CKP)</h2>
+                <p>
+                    Stasiun Cikampek (CKP) adalah stasiun kereta api kelas besar tipe B yang terletak di Cikampek Kota, Cikampek, Karawang. Stasiun yang terletak pada ketinggian +46 meter ini merupakan stasiun yang lokasinya paling timur di Daerah Operasi 1 Jakarta dan Kabupaten Karawang, serta merupakan stasiun kereta api terbesar di kabupaten tersebut dengan jarak 79,2 km sebelah timur dari Jakarta Gambir dan 89,7 km sebelah utara dari Bandung.
+                </p>
+                <p>
+                    Stasiun ini menjadi salah satu penghubung kereta api utama di daerah Purwasuka. Di sebelah timur stasiun, jalur bercabang menjadi dua arah, yakni jalur utama lintas tengah dan utara Jawa mengarah Cirebon, Jawa Tengah–DIY, dan Jawa Timur, sedangkan jalur percabangan dari lintas utara mengarah Bandung terletak di sebelah selatan stasiun. Dahulu, sebelum beroperasinya jalur ganda pada petak Cikampek-Cirebon, hampir semua kereta api yang berangkat dari Jakarta berhenti di stasiun ini. Tujuannya adalah untuk memastikan petak jalur di depannya sudah aman untuk dilewati kereta api berikutnya serta sering kali untuk menunggu persilangan kereta api yang datang dari arah Cirebon, terutama pada pagi dan petang hari.
+                </p>
+                <p>
+                    Berdasarkan data BPS Kabupaten Karawang, sebanyak 798.335 penumpang kereta api lokal dan antarkota telah dilayani oleh stasiun ini. Berdasarkan data ini, Stasiun Cikampek menjadi stasiun dengan penumpang terbanyak di Kabupaten Karawang.
+                </p>
+            </div>
+        </section>        
+        <body>
+            <!-- Konten lain seperti header, main, dan sections -->
+            
+            <footer>
+                <p style="text-align: center; color: #fff; background-color: rgba(0, 0, 0, 0.7); padding: 10px 0;">
+                    Created by Akhdan Shalahudin &copy; 2024
+                </p>
+            </footer>
+        </body>
+        
+        <section class="section layout" id="layout" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Stasiun_Cikampek_2024.jpg');">
+            <div class="content">
+                <h2>Bangunan dan Tata Letak Stasiun Cikampek</h2>
+                <p style="color: #ffffff;">
+                    Bangunan Stasiun Cikampek adalah stasiun pulau dan memiliki delapan jalur kereta api. Jalur 3 merupakan
+                    sepur lurus yang biasanya digunakan untuk kereta api yang berjalan langsung ke arah Jakarta, jalur 4
+                    merupakan sepur lurus untuk kereta api yang berjalan langsung ke arah Cirebon dan jalur 6 merupakan
+                    sepur lurus arah Purwakarta. Di sebelah selatan stasiun, terdapat sebuah pemutar rel (turntable) yang
+                    difungsikan untuk membalik arah lokomotif. Pekarangan emplasemen Stasiun Cikampek juga menjadi tempat
+                    unspoor atau ditanahkannya unit-unit lokomotif diesel hidraulik milik Depo lokomotif Tanah Abang yang
+                    sudah tidak dioperasikan lagi, seperti lokomotif BB301 308 dan BB200.
+                </p>
+            </div>
+        </section>
+        <body>
+            <!-- Konten lain seperti header, main, dan sections -->
+            
+            <footer>
+                <p style="text-align: center; color: #fff; background-color: rgba(0, 0, 0, 0.7); padding: 10px 0;">
+                    Created by Akhdan Shalahudin &copy; 2024
+                </p>
+            </footer>
+        </body>
+        
+        <section class="section services" id="services" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Stasiun_Cikampek_2024.jpg');">
+            <div class="content">
+                <h2>Layanan Kereta Antarkota (Intercity Train)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama Kereta Api</th>
+                            <th>Relasi</th>
+                            <th>Jenis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jayabaya</td>
+                            <td>Pasar Senen–Malang pp</td>
+                            <td>Eksekutif dan Ekonomi NG</td>
+                        </tr>
+                        <tr>
+                            <td>Airlangga</td>
+                            <td>Pasar Senen–Surabaya Pasar Turi pp</td>
+                            <td>Ekonomi</td>
+                        </tr>
+                        <tr>
+                            <td>Fajar Utama Yogyakarta</td>
+                            <td>Pasar Senen–Yogyakarta pp</td>
+                            <td>Eksekutif, Ekonomi premium, dan Priority</td>
+                        </tr>
+                        <tr>
+                            <td>Argo Cheribon</td>
+                            <td>Gambir–Cirebon pp</td>
+                            <td>Eksekutif dan Ekonomi</td>
+                        </tr>
+                        <tr>
+                            <td>Singasari</td>
+                            <td>Pasar Senen–Blitar pp</td>
+                            <td>Eksekutif dan Ekonomi</td>
+                        </tr>
+                        <tr>
+                            <td>Ciremai</td>
+                            <td>Bandung–Semarang Tawang pp</td>
+                            <td>Eksekutif dan Ekonomi</td>
+                        </tr>
+                        <tr>
+                            <td>Harina</td>
+                            <td>Bandung–Surabaya Pasarturi pp</td>
+                            <td>Eksekutif dan Ekonomi</td>
+                        </tr>
+                        <tr>
+                            <td>Jayakarta</td>
+                            <td>Surabaya Gubeng–Pasarsenen pp</td>
+                            <td>Ekonomi Premium</td>
+                        </tr>
+                        <tr>
+                            <td>Cikuray</td>
+                            <td>Garut–Pasar Senen pp</td>
+                            <td>Ekonomi</td>
+                        </tr>
+                        <tr>
+                            <td>Serayu</td>
+                            <td>Pasar Senen-Purwokerto pp</td>
+                            <td>Ekonomi</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="additional-services">
+                    <h2> Layanan Kereta Lokal (Commuter Train)</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama Kereta Api</th>
+                                <th>Relasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Commuter Line Jatiluhur</td>
+                                <td>Cikarang–Cikampek pp</td>
+                            </tr>
+                            <tr>
+                                <td>Commuter Line Walahar Ekspres</td>
+                                <td>Cikarang–Purwakarta pp</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <body>
+            <!-- Konten lain seperti header, main, dan sections -->
+            
+            <footer>
+                <p style="text-align: center; color: #fff; background-color: rgba(0, 0, 0, 0.7); padding: 10px 0;">
+                    Created by Akhdan Shalahudin &copy; 2024
+                </p>
+            </footer>
+        </body>
+        
+        <section class="section final-slide" id="final-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Stasiun_Cikampek_2024.jpg');">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+            <div class="content">
+                <!-- Isi slide akhir -->
+                <h2>Terima kasih telah mengunjungi Halaman Saya!</h2>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/akhdansh_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color: #E4405F;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/akhdan.shlhdn" target="_blank" style="color: #3B5998;"><i class="fab fa-facebook"></i></a>
+                    <a href="www.linkedin.com/in/akhdan-shalahudin-12232b271" target="_blank" style="color: #0077B5;"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <footer>
+                <p style="text-align: center; color: #fff; background-color: rgba(0, 0, 0, 0.7); padding: 10px 0;">
+                    Created by Akhdan Shalahudin &copy; 2024
+                </p>
+            </footer>
+        </section>
+        
+    </main>
+</body>
+
+</html>
